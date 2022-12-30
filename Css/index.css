@@ -4,15 +4,20 @@
   box-sizing: border-box;
 }
 
-#header {
+.header {
   background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(75deg, #A683E3 50%, #E4E9FD 50%);
+  background-image: -webkit-linear-gradient(69deg, #A683E3 50%, #E4E9FD 50%);
   min-height: 600px;
   font-family: 'helvetica neue';
 }
 
 body {
   background: #FFFFF7;
+  font-family: SuisseWorks, Georgia, Times, times new roman, serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  /*  font-weight: 700;
+  font-size: 3.2rem;*/
+  line-height: 1.25;
+  letter-spacing: -.05rem;
 }
 
 marquee {
@@ -42,27 +47,20 @@ h2 {
 
 h3 {
   color: rgb(97, 37, 118);
-  font-size: 30px !important;
+  font-size: 30px;
 }
 
 h4 {
   color: rgb(97, 37, 118);
-  font-size: 25px !important;
+  font-size: 25px;
   font-weight: 900;
   font-family: inherit;
 }
 
-iframe {
-  border-radius: 15px;
-  overflow: hidden;
-}
-
 .nav-container-fluid {
-  /*  background: blue;*/
   margin: 0;
-  padding: 1% 0% 1% 0;
+  padding: 1.9% 0;
   z-index: 2;
-  /*  border: 2px solid orange*/
 }
 
 .container-fluid {
@@ -77,12 +75,13 @@ iframe {
   padding: 1%;
   z-index: 2;
   top: 0;
+  box-shadow: 5px 2px 4px grey;
 }
 
 .topnav .myname {
   font-weight: 900;
   color: rgb(97, 37, 118);
-  font-size: 30px !important;
+  font-size: 30px;
   text-decoration: none;
   margin-left: 10%;
 }
@@ -98,14 +97,14 @@ iframe {
 }
 
 .topnav .nav-item:hover {
-  border: 2px solid #975ab6;
   padding: 10px;
   border-radius: 11px;
-  box-shadow: 2px #ccc;
+  background: #975ab6;
+
 }
 
 .topnav .nav-item:active {
-  background-color: #975ab6;
+  background: #FFFFF7;
 }
 
 .l, .s {
@@ -115,7 +114,7 @@ iframe {
 }
 
 .topnav a:not(:first-child) {
-  margin: 0% 7% 0% -3%;
+  margin: 0 7% 0 -3%;
 }
 
 .topnav .icon {
@@ -129,8 +128,7 @@ iframe {
   background-position: right;
   background-attachment: scroll;
   background-size: contain;
-  /*  background-color: #999999;
-  background-color: #ffc107;*/
+
 }
 
 .intro {
@@ -142,17 +140,6 @@ iframe {
 .sub-intro {
   font-size: 1rem;
   padding-bottom: 2%;
-}
-
-.intro h2,
-h3 {
-  padding-bottom: 1%;
-  font-weight: 800;
-  /*  animation-name: myname;
-  animation-duration: 6s;
-  animation-iteration-count: 2;
-  animation-fill-mode: backwards;
-  animation-timing-function: steps();*/
 }
 
 /*@keyframes myname {
@@ -171,7 +158,7 @@ h3 {
   }
 }*/
 /*animating my name*/
-.intro h2 {
+.intro .intro-heading {
   letter-spacing: .015em;
   animation: typing 2.5s steps(40, end), myanimation .75s step-end infinite;
 }
@@ -230,15 +217,10 @@ h3 {
 }
 
 /*about mee*/
-#bio-skills {
-  /* background-color: rgb(0, 115, 255); */
-}
-
 .mystory-img-div img {
   border-radius: 10px;
   box-shadow: 10px 5px 20px grey;
   width: 55%;
-  padding: 20px;
   margin-left: 240px;
 }
 
@@ -302,7 +284,7 @@ h3 {
   width: 50%;
   box-shadow: inset;
   border-radius: 10px;
-  ;
+
 }
 
 .education-text a {
@@ -315,20 +297,16 @@ h3 {
 }
 
 /* myproject css */
+
+.myprojects{
+  background: #ccc;
+}
 .real-client-project {
   margin: 6% 0;
   cursor: pointer;
 }
 
-.real-client-project iframe {
-  border-radius: 15px;
-  box-shadow: 10px 5px 20px grey;
-  cursor: pointer;
-}
 
-.real-client-project iframe:hover {
-  cursor: pointer;
-}
 
 .project1 img {
   width: 80%;
@@ -341,22 +319,21 @@ h3 {
   width: 85%;
 }
 
-
-.project3{
-padding-top: 6%;
+.project3 {
+  padding-top: 6%;
 }
+
 .project-text p, h4 {
   text-align: left;
   margin: 3%;
 }
 
 /* contact styling */
-#contact {
-  background-color: #E4E9FD;
+.contact{
+  background: #fffff3;
 }
-
 .contact, .contact a {
-  margin: 2%;
+  margin: 1%;
 }
 
 /* footer style */
@@ -434,7 +411,12 @@ padding-top: 6%;
     float: right;
     display: block
   }
+  .topnav .nav-item:hover {
+    padding: 10px;
 
+    background: #975ab6;
+
+  }
   .homepage {
     height: 66vh;
     padding-top: 14%;
@@ -555,17 +537,18 @@ padding-top: 6%;
 
   .social-icon {
     background-color: #ffffff;
-    width: 100%;
+    margin-left: 125px;
     border-radius: 15px;
     text-align: center;
   }
 
   .newsletter input[type=text] {
-    margin: 0 0 0 6%;
+    margin: 0 -2% 0 12%;
   }
 
   .newsletter {
     margin-bottom: 6%;
+    margin-left: 3%;
   }
 
   .copyright {
