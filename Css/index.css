@@ -413,7 +413,7 @@ h4 {
   }
   .topnav .nav-item:hover {
     padding: 10px;
-
+    border-radius: 11px;
     background: #975ab6;
 
   }
@@ -536,14 +536,11 @@ h4 {
   }
 
   .social-icon {
-    background-color: #ffffff;
-    margin-left: 125px;
-    border-radius: 15px;
-    text-align: center;
+  width: 44%;
   }
 
   .newsletter input[type=text] {
-    margin: 0 -2% 0 12%;
+    margin: 0 2% 0 6%;
   }
 
   .newsletter {
